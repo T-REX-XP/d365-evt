@@ -22,10 +22,24 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - uses: actions/checkout@master
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
         with:
           lfs: true
+          
+      - name: Setup MSBuild.exe
+        uses: warrenbuckley/Setup-MSBuild@v1
+        
+      - name: Build Plugins with MSBuild
+        working-directory: Plugins
+        run: msbuild Plugins.csproj
+        
+      - name: Copy plugin assemply to solution folder
+        uses: canastro/copy-file-action@master
+        with:
+          source: "Plugins/bin/Debug/EVTPlugins.dll"
+          target: "Solution/package/PluginAssemblies/EVTPlugins-6758C8F1-34AF-4C22-B581-014E47FCDFA6"
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script

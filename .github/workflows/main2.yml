@@ -36,9 +36,16 @@ jobs:
       - name: Setup NuGet
         uses: NuGet/setup-nuget@v1.0.2
         env:
-          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'    
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
+
+      - uses: actions/cache@v1
+        id: cache
+        with:
+          path: ~/.nuget/packages
+          key: ${{ runner.os }}-nuget-${{ hashFiles('**/packages.lock.json') }}
           
       - name: NuGet Restore
+        if: steps.cache.outputs.cache-hit != 'true'
         run: nuget restore EVT.sln
         
       - name: Build Plugins with MSBuild
@@ -89,7 +96,7 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
           asset_path: ./out/evt_managed.zip
-          asset_name: out/evt_managed.zip
+          asset_name: evt_managed.zip
           asset_content_type: application/zip
           
       - name: Upload Release Asset Unmanaged
@@ -100,5 +107,5 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
           asset_path: ./out/evt_unmanaged.zip
-          asset_name: out/evt_unmanaged.zip
+          asset_name: evt_unmanaged.zip
           asset_content_type: application/zip

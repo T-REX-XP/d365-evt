@@ -1,0 +1,11 @@
+jobs:
+  build:
+    runs-on: windows-latest
+    steps: 
+      - name: Pack Solution
+        uses: microsoft/powerplatform-actions/pack-solution@v0
+        with:
+          solution-file: 'out/aSolution1.zip'
+          solution-folder: 'out/solutions/solution one'
+          solution-type: 'managed'
+          overwrite-files: true

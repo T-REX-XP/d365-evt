@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugins", "Plugins\Plugins.csproj", "{7E6D8635-A491-4D88-A146-1134B0BD8BF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solution", "Solution\Solution.csproj", "{1F683C30-577E-42C6-9DF7-744AEBF0239A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E6D8635-A491-4D88-A146-1134B0BD8BF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E6D8635-A491-4D88-A146-1134B0BD8BF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E6D8635-A491-4D88-A146-1134B0BD8BF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E6D8635-A491-4D88-A146-1134B0BD8BF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F683C30-577E-42C6-9DF7-744AEBF0239A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F683C30-577E-42C6-9DF7-744AEBF0239A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F683C30-577E-42C6-9DF7-744AEBF0239A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F683C30-577E-42C6-9DF7-744AEBF0239A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C3E0B29F-A0FA-4C28-A40F-7CBE4BE94094}
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+EndGlobal

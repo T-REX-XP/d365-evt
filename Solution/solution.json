@@ -1,0 +1,6 @@
+{
+"solutionName": "EnvironmentVersionTracker",
+"timeout": 800,
+"packageType": "Both",
+"outFolder": "../package"
+}

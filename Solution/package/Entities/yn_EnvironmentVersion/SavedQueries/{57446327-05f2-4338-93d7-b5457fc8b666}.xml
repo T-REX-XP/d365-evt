@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{57446327-05f2-4338-93d7-b5457fc8b666}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="yn_version" select="1" icon="1" preview="1">
+        <row name="result" id="yn_environmentversionid">
+          <cell name="yn_version" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="yn_environmentversion">
+          <attribute name="yn_environmentversionid" />
+          <attribute name="yn_version" />
+          <attribute name="createdon" />
+          <order attribute="yn_version" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="yn_version" operator="like" value="{0}" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active Environment Versions" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

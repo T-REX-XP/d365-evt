@@ -1,0 +1,12 @@
+<environmentvariabledefinition schemaname="yn_evt_recipients">
+  <description default="Recipients of the notification">
+    <label description="Recipients of the notification" languagecode="1033" />
+  </description>
+  <displayname default="EVT Recipients">
+    <label description="EVT Recipients" languagecode="1033" />
+  </displayname>
+  <introducedversion>1.0.0.0</introducedversion>
+  <iscustomizable>1</iscustomizable>
+  <isrequired>0</isrequired>
+  <type>100000000</type>
+</environmentvariabledefinition>

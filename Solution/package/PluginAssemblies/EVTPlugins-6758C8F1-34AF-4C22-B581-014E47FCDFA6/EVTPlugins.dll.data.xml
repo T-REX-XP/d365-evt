@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PluginAssembly FullName="EVTPlugins, Version=0.1.0.0, Culture=neutral, PublicKeyToken=35d3cdca94e3e744" PluginAssemblyId="6758c8f1-34af-4c22-b581-014e47fcdfa6" CustomizationLevel="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <IsolationMode>2</IsolationMode>
+  <SourceType>0</SourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <FileName>/PluginAssemblies/EVTPlugins-6758C8F1-34AF-4C22-B581-014E47FCDFA6/EVTPlugins.dll</FileName>
+  <PluginTypes>
+    <PluginType AssemblyQualifiedName="EVTPlugins.GetEnvironmentVersion, EVTPlugins, Version=0.1.0.0, Culture=neutral, PublicKeyToken=35d3cdca94e3e744" PluginTypeId="68e0c6fe-7098-48ae-bbd8-6b3c8ee6a3a8" Name="EVTPlugins.GetEnvironmentVersion">
+      <FriendlyName>c562d4b2-432d-4e52-a913-449b561582a2</FriendlyName>
+    </PluginType>
+  </PluginTypes>
+</PluginAssembly>

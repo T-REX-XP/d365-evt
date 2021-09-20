@@ -1,0 +1,18 @@
+<customapi uniquename="yn_GetEnvironmentVersion2">
+  <allowedcustomprocessingsteptype>0</allowedcustomprocessingsteptype>
+  <bindingtype>0</bindingtype>
+  <description default="Get current env version">
+    <label description="Get current env version" languagecode="1033" />
+  </description>
+  <displayname default="Get Environment Version">
+    <label description="Get Environment Version" languagecode="1033" />
+  </displayname>
+  <iscustomizable>1</iscustomizable>
+  <isfunction>0</isfunction>
+  <isprivate>0</isprivate>
+  <name>GetEnvironmentVersion</name>
+  <plugintypeid>
+    <plugintypeid>68e0c6fe-7098-48ae-bbd8-6b3c8ee6a3a8</plugintypeid>
+  </plugintypeid>
+  <workflowsdkstepenabled>0</workflowsdkstepenabled>
+</customapi>

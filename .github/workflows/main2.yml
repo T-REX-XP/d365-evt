@@ -35,6 +35,6 @@ jobs:
       - name: Pack Solution
         uses: microsoft/powerplatform-actions/pack-solution@v0
         with:
-          solution-file: 'out/aSolution1.zip'
-          solution-folder: 'out/solutions/solution one'
+          solution-file: 'out/evt_managed.zip'
+          solution-folder: './Solution/package'
           solution-type: 'managed'

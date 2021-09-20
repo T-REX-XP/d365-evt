@@ -36,8 +36,11 @@ jobs:
       - name: Setup NuGet
         uses: NuGet/setup-nuget@v1.0.2
         env:
-          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'       
-      
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'    
+          
+      - name: NuGet Restore
+        run: nuget restore EVT.sln
+        
       - name: Build Plugins with MSBuild
         working-directory: Plugins
         run: msbuild Plugins.csproj

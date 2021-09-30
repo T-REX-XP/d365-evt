@@ -85,11 +85,7 @@
       <RootComponent type="80" schemaName="yn_EVTEnvironmentVersionTracker" behavior="0" />
       <RootComponent type="91" id="{6758c8f1-34af-4c22-b581-014e47fcdfa6}" schemaName="EVTPlugins, Version=0.1.0.0, Culture=neutral, PublicKeyToken=35d3cdca94e3e744" behavior="0" />
     </RootComponents>
-    <MissingDependencies>
-      <MissingDependency>
-        <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
-        <Dependent type="80" schemaName="yn_EVTEnvironmentVersionTracker" displayName="EVT- Environment Version Tracker" />
-      </MissingDependency>
+    <MissingDependencies>     
     </MissingDependencies>
   </SolutionManifest>
 </ImportExportXml>

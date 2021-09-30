@@ -1,5 +1,4 @@
 # PowerPlatform - Environment Version Tracker
- Power Apps Environment Version Tracker
 
 ## Want to know the moment when your environment version has been changed??
 Environment Version Tracker is the solution for resolving this issue
